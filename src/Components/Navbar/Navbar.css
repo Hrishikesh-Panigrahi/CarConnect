@@ -38,18 +38,12 @@
 
 .link {
     text-decoration: none;
-    /* color: white; */
     font-weight: bold;
 }
 
-.link:hover {
-    color: #ddd;
-}
 
 .icon {
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
+    display: none;
 }
 
 .signUp {
@@ -88,6 +82,10 @@
 
 
 @media (max-width: 768px) {
+    .icon {
+        display: block;
+    }
+
     .navbar {
         position: absolute;
         background-color: var(--secondary-color);
