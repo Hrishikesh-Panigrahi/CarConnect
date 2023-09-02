@@ -63,13 +63,13 @@ p{
   cursor: pointer;
 }
 
-.primarybtn{
+.primaryBtn{
   background-color: var(--primary-color);
-  color: var(--black-color);
+  color: var(--white-color);
   padding: 10px 15px;
   font-size: 12px;
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: 3px;
   border: 1px solid var(--primary-color);
   transition: all .4s ease-in-out;
   &:hover{

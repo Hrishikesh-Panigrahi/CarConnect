@@ -1,0 +1,68 @@
+.home{
+    padding-top: 10rem;
+}
+
+.secContainer{
+    padding: 0 1.5 rem;
+    text-align: center;
+    display: grid;
+    gap: 2rem;
+}
+
+.homeSpan{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.homeTitle{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--black-color);
+}
+ 
+.btns{
+    gap: 1.5rem;
+    justify-content: center;
+
+}
+
+.btn{
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: .5rem;
+
+    &:hover{
+        background-color: var(--primary-color);
+        color: var(--white-color);
+    }
+}
+
+.btn:nth-child(1){
+    background-color: var(--white-color);
+    color: var(--text-color);
+
+    &:hover{
+        background-color: var(--primary-color);
+        color: var(--white-color);
+    }
+}
+
+.btn:nth-child(2){
+
+    &:hover{
+        background-color: var(--white-color);
+        color: var(--text-color);
+    }
+}
+
+.homeImage{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
