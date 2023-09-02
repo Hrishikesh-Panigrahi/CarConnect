@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 
@@ -6,19 +6,17 @@ import { IoIosCloseCircle } from "react-icons/io";
 import { TbGridDots } from "react-icons/tb";
 
 const Navbar = () => {
-  
-  const[navbar, Setnavbar] = useState('navbar')
+  const [navbar, Setnavbar] = useState("navbar");
 
   const showNavbar = () => {
-    Setnavbar('navbar showNavbar')
-  }
-  
-  const removeNavbar = () => {
-    Setnavbar('navbar')
-  }
-  
-  return (
+    Setnavbar("navbar showNavbar");
+  };
 
+  const removeNavbar = () => {
+    Setnavbar("navbar");
+  };
+
+  return (
     <div className="header">
       <div className="logodiv">
         <img className="logo" src={logo} alt="logo" />
@@ -50,7 +48,7 @@ const Navbar = () => {
             </a>
           </li>
         </div>
-        <IoIosCloseCircle className="icon closeIcon" onClick={removeNavbar}/>
+        <IoIosCloseCircle className="icon closeIcon" onClick={removeNavbar} />
       </div>
 
       <div className="signUp flex">
