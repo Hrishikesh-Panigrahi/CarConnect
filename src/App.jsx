@@ -1,11 +1,12 @@
 import { useState } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar.jsx";
-import Home from "./Components/Home/Home.jsx";
+import Home from "./Pages/Home/Home.jsx";
 import Search from "./Components/Search/Search.jsx";
-import Trending from "./Components/Trending/Trending";
-import Sellers from "./Components/Sellers/Sellers";
-import Auction from "./Components/Auction/Auction";
+import Trending from "./Pages/Trending/Trending";
+import Sellers from "./Pages/Sellers/Sellers";
+import Auction from "./Pages/Auction/Auction";
+import Review from "./Pages/Review/Review";
 
 function App() {
   return (
@@ -15,11 +16,10 @@ function App() {
       <Search />
       <Trending />
       <Sellers />
-
       <Auction />
-      
-      {/* auctions */}
-      {/* reviews */}
+      <Review />
+
+      {/* Footer */}
     </>
   );
 }

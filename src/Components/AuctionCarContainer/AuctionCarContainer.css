@@ -76,11 +76,11 @@
     border: 1px solid var(--primary-color);
 }
 
-.singleCarActive{
+.singleCarActive {
     padding: 1rem;
     background: var(--secondary-color);
 }
 
-.singleCarActive .price_buyBtn span{
+.singleCarActive .price_buyBtn span {
     border: 1px solid var(--primary-color);
 }

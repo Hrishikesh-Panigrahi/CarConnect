@@ -1,29 +1,28 @@
-.secHeading{
+.secHeading {
     justify-content: space-between;
     padding: 1rem 0;
 
 }
 
-.navBtns{
+.navBtns {
     gap: .5rem;
-    
+
 }
 
-.navBtns .icons{
+.navBtns .icons {
     padding: 3px 5px;
     background: var(--secondary-color);
     border-radius: 3px;
     font-size: 30px;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
         background: var(--primary-color);
         color: var(--white-color);
     }
 }
 
-.carContainer{
-   gap: 2rem;
+.carContainer {
+    gap: 2rem;
 
 }
-
