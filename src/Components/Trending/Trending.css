@@ -1,15 +1,15 @@
-.treanding .secContainer .secHeading{
+.secHeading{
     justify-content: space-between;
     padding: 1rem 0;
 
 }
 
-.treanding .secContainer .navBtns{
+.navBtns{
     gap: .5rem;
     
 }
 
-.treanding .secContainer .navBtns .icons{
+.navBtns .icons{
     padding: 3px 5px;
     background: var(--secondary-color);
     border-radius: 3px;
@@ -20,5 +20,10 @@
         background: var(--primary-color);
         color: var(--white-color);
     }
+}
+
+.carContainer{
+   gap: 2rem;
+
 }
 

@@ -1,6 +1,6 @@
 // CarContainer.jsx
 import React from 'react';
-// import './CarContainer.css'; // Create a CSS file for styling
+import './CarContainer.css'; // Create a CSS file for styling
 
 const CarContainer = ({ car }) => {
     return (

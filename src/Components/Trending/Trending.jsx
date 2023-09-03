@@ -30,7 +30,7 @@ const Trending = () => {
             seller: 'Best Seller',
             image: thar,
         },
-        
+
         {
             title: 'Used 2019 Thar Premium',
             miles: '20,000 miles',
@@ -51,8 +51,8 @@ const Trending = () => {
                 </h3>
 
                 <div className="navBtns flex">
-                    <BsArrowLeftShort className='icon leftIcon'/>
-                    <BsArrowRightShort className='icon rightIcon'/>
+                    <BsArrowLeftShort className='icons leftIcon'/>
+                    <BsArrowRightShort className='icons rightIcon'/>
                 </div>
             </div>
 
