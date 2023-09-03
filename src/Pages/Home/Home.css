@@ -65,3 +65,43 @@
     height: auto;
     border-radius: 5px;
 }
+
+@media screen and (min-width: 520px) {
+    /* .home {
+        padding-top: 15rem;
+    } */
+
+    .home .homeTitle {
+        font-size: 40px;
+    }
+
+    .home .homeSpan {
+        font-size: 18px;
+    }
+
+    .homeImage img{
+        max-width: 80%;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .home {
+        padding-top: 10rem;
+    }
+
+    .home .secContainer{
+        gap: 2.5rem;
+    }
+    .home .homeTitle {
+        font-size: 45px;
+    }
+
+    .home .homeSpan {
+        font-size: 21px;
+    }
+
+    .btns{
+        margin-top: 1rem;
+    }
+}
