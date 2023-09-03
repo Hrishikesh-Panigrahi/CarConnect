@@ -1,0 +1,24 @@
+.treanding .secContainer .secHeading{
+    justify-content: space-between;
+    padding: 1rem 0;
+
+}
+
+.treanding .secContainer .navBtns{
+    gap: .5rem;
+    
+}
+
+.treanding .secContainer .navBtns .icons{
+    padding: 3px 5px;
+    background: var(--secondary-color);
+    border-radius: 3px;
+    font-size: 30px;
+    cursor: pointer;
+
+    &:hover{
+        background: var(--primary-color);
+        color: var(--white-color);
+    }
+}
+

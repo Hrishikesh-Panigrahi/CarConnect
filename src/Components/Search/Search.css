@@ -36,7 +36,7 @@
     border-radius: 10px;
     width: 100%; 
     outline: none;
-
+    
     &:focus{
         border: none;
         border: 1px solid var(--primary-color);
@@ -48,12 +48,10 @@
     width: 100%;
     align-self: center;
     gap: .3rem;
-
-    font-size: 16px;
-    padding: 10px 20px;
-    border: none;
+    /* justify-self: center;  */
+   
     border-radius: 5px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .search .icon {

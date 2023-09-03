@@ -80,6 +80,13 @@
     transition: .3s ease;
 }
 
+.addBg{
+    background-color: var(--secondary-color);
+    box-shadow: none;
+    color: var(--white-color);
+    transition: .3s ease;
+
+}
 
 @media (max-width: 768px) {
    .navbar .icon {
