@@ -1,0 +1,10 @@
+.footer{
+    padding-top: 4rem;
+}
+
+.footerContainer .footerMenuDiv{
+    padding: 2rem;
+    background: var(--grey-color);
+    border-radius: 10px;
+    gap: 1.5rem;
+}

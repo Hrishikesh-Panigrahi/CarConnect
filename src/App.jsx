@@ -7,7 +7,7 @@ import Trending from "./Pages/Trending/Trending";
 import Sellers from "./Pages/Sellers/Sellers";
 import Auction from "./Pages/Auction/Auction";
 import Review from "./Pages/Review/Review";
-
+import Footer from "./Pages/Footer/Footer"
 function App() {
   return (
     <>
@@ -18,8 +18,8 @@ function App() {
       <Sellers />
       <Auction />
       <Review />
-
-      {/* Footer */}
+      <Footer/>
+      
     </>
   );
 }
