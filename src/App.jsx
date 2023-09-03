@@ -4,6 +4,8 @@ import Navbar from "./Components/Navbar/Navbar.jsx";
 import Home from "./Components/Home/Home.jsx";
 import Search from "./Components/Search/Search.jsx";
 import Trending from "./Components/Trending/Trending";
+import Sellers from "./Components/Sellers/Sellers";
+
 function App() {
   return (
     <>
@@ -11,8 +13,8 @@ function App() {
       <Home />
       <Search />
       <Trending />
-      {/* tredning */}
-      {/* sellers */}
+      <Sellers />
+      
       {/* auctions */}
       {/* reviews */}
     </>

@@ -1,0 +1,7 @@
+.sellers{
+    background: var(--grey-color);
+}
+
+.sellers .secContainer{
+    margin: 2rem inherit;
+}
