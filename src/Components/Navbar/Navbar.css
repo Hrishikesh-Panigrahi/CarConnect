@@ -42,7 +42,7 @@
 }
 
 
-.icon {
+.navbar .icon {
     display: none;
 }
 
@@ -82,8 +82,10 @@
 
 
 @media (max-width: 768px) {
-    .icon {
-        display: block;
+   .navbar .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
     }
 
     .navbar {
