@@ -5,6 +5,7 @@ import Home from "./Components/Home/Home.jsx";
 import Search from "./Components/Search/Search.jsx";
 import Trending from "./Components/Trending/Trending";
 import Sellers from "./Components/Sellers/Sellers";
+import Auction from "./Components/Auction/Auction";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <Search />
       <Trending />
       <Sellers />
+
+      <Auction />
       
       {/* auctions */}
       {/* reviews */}
