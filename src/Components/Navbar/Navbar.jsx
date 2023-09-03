@@ -23,7 +23,7 @@ const Navbar = () => {
     } else {
       setHeader("header");
     }
-  }
+  };
 
   window.addEventListener("scroll", addBg);
 
