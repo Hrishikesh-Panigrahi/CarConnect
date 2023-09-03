@@ -1,8 +1,51 @@
 import React from "react";
 import "./Review.css";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
+import ReviewContainer from "../../Components/ReviewContainer/ReviewContainer";
+
+import carReview1 from "../../assets/Car_Review1.jpg"
+import carReview2 from "../../assets/Car_Review2.jpg"
+import carReview3 from "../../assets/Car_Review3.jpg"
+
+import user_1 from "../../assets/user_1.jpg"
+import user_2 from "../../assets/user_2.jpeg"
+import user_3 from "../../assets/user_3.jpeg"
+
+
 
 const Review = () => {
+  const reviews = [
+    {
+      title: "2023 Honda",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+      image: carReview1,
+      reviewerName: "Hrishikesh Panigrahi",
+      reviewerRole: "Chief Editor",
+      reviewerImage: user_1,
+      stars: 4.3,
+    },
+    {
+      title: "2022 Mercedes",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+      image: carReview2,
+      reviewerName: "Sarah Johnson",
+      reviewerRole: "Customer",
+      reviewerImage: user_2,
+      stars: 4.5,
+    },
+    {
+      title: "2022 Audi",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+      image: carReview3,
+      reviewerName: "Bunty",
+      reviewerRole: "Customer",
+      reviewerImage: user_3,
+      stars: 4.6,
+    },
+  ];
   return (
     <div className="review section">
       <div className="secContainer container">
@@ -16,15 +59,9 @@ const Review = () => {
         </div>
 
         <div className="reviewContainer grid">
-          <div className="singleReview grid">
-            <div className="imgDiv">
-              <img src="" alt="CarImage" />
-            </div>
-            <h5 className="reviewTitle">2023</h5>
-            <span className="desc">good Cars are op</span>
-
-            <div className="reviewerDiv flex"></div>
-          </div>
+          {reviews.map((review, index) => (
+            <ReviewContainer review={review} key={index} />
+          ))}
         </div>
       </div>
     </div>

@@ -1,0 +1,82 @@
+.singleReview {
+    transition: .3s ease-in-out;
+}
+
+.singleReview .imgDiv {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+
+    border-radius: 10px;
+    border: 5px solid transparent;
+}
+
+.singleReview .imgDiv img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.reviewTitle {
+    color: var(--black-color);
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.desc {
+    color: var(--black-color);
+    opacity: .7;
+    font-size: 14px;
+}
+
+.reviewerDiv {
+    justify-content: space-between;
+    margin-top: 1rem;
+    align-items: flex-start;
+}
+
+.reviewerDiv .leftDiv {
+    gap: .8rem;
+}
+
+.reviewerImage {
+    border: 2px solid var(--white-color);
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 4px 5px rgb(222, 222, 222);
+}
+
+.aboutReviewer .name {
+    color: var(--black-color);
+    font-weight: 600;
+    padding-bottom: .5rem;
+    font-size: 15px;
+}
+
+.aboutReviewer p {
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.rightDiv {
+    gap: .3rem;
+}
+
+.rightDiv .icon {
+    color: rgb(255, 165, 0);
+}
+
+.rightDiv blockquote {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.singleReview:hover {
+    transform: translateY(-7px);
+}
+
+.singleReview:hover .imgDiv {
+    border: 5px solid var(--primary-color);
+}
