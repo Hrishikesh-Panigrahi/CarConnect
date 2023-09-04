@@ -26,3 +26,61 @@
     gap: 2rem;
 
 }
+
+@media screen and (min-width: 520px) {
+    .trending .secHeading {
+        margin-bottom: 1rem;
+    }
+
+    .trending .secTitle{
+        font-size: 23px;
+    }
+
+    .trending .navBtns{
+        gap: .5rem;
+    }
+    
+    .trending .navBtns .icon{
+        font-size: 40px;
+    }
+
+   .trending .carContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trending .carContainer .singleCar .carTitle{
+        font-size: 18px;
+    }
+    
+    .trending .carContainer .singleCar .miles, .trending .carContainer .singleCar .AWD{
+        font-size: 16px;
+    }
+
+    .trending .carContainer .singleCar .price_seller span{
+        font-weight: 600;
+    }
+
+
+
+}
+    
+@media screen and (min-width: 940px) {
+    
+     .trending .secTitle{
+        font-size: 28px;
+    }
+
+    .trending .navBtns{
+        gap: .1rem;
+    }
+    
+    .trending .navBtns .icon{
+        font-size: 40px;
+    }
+
+   .trending .carContainer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+    
