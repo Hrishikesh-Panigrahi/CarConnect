@@ -14,7 +14,17 @@ const Sellers = () => {
       image: toyota,
     },
     {
-      name: "mercedes",
+      name: "Mercedes",
+      price: "$40k",
+      image: mercedes,
+    },
+    {
+      name: "Brand3",
+      price: "$40k",
+      image: mercedes,
+    },
+    {
+      name: "Brand4",
       price: "$40k",
       image: mercedes,
     },
@@ -29,7 +39,7 @@ const Sellers = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
 
-        <div className="sellerContainer">
+        <div className="sellerContainer grid">
           {sellers.map((seller, index) => (
             <SellerContainer key={index} seller={seller} />
           ))}

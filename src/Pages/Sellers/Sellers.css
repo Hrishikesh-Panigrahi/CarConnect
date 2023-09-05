@@ -1,7 +1,43 @@
 .sellers {
     background: var(--grey-color);
+    margin-top: 20px;
+    padding-top: 3px;
 }
 
 .sellers .secContainer {
     margin: 2rem inherit;
+}
+
+@media screen and (min-width: 520px) {
+    .sellers .secHeading{
+        margin-top: 2rem;
+    }
+
+    .sellers .secTitle{
+        font-size: 25px;
+    }
+   
+    .sellers .secTitle p{
+        font-size: 18px;
+    }
+
+    .sellers .sellerContainer{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .singleSeller{
+        gap: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width: 840px) {
+    .sellers .secTitle{
+        font-size: 30px;
+    }
+   
+    .sellers .secTitle p{
+        font-size: 20px;
+    }
 }

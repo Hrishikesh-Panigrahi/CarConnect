@@ -26,3 +26,54 @@
     gap: 2rem;
 
 }
+
+@media screen and (min-width: 520px) {
+    .auction .secHeading {
+        margin-top: 1rem;
+    }
+
+    .auction .secTtile{
+        font-size: 23px;
+    }
+
+    .auction .navBtns {
+        gap: .5rem;
+    }
+
+    .auction .navBtns .icons {
+        font-size: 40px;
+    }
+
+    .auction .carContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .auction .carContainer .singleCar .carTitle{
+        font-size: 18px;
+    }
+    
+    .auction .carContainer .singleCar .miles, .auction .carContainer .singleCar .AWD{
+        font-size: 16px;
+    }
+    .auction .carContainer .singleCar .price_buyBtn{
+        font-weight: 600;
+    }
+
+}
+
+@media screen and (min-width: 940px) {
+  
+
+    .auction .secTtile{
+        font-size: 28px;
+    }
+
+    .auction .navBtns {
+        gap: 1rem;
+    }
+
+    .auction .carContainer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
