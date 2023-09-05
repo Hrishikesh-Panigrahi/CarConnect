@@ -14,7 +14,11 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .singleGrid .footerTitle{
+    .FootersingleGrid{
+        margin: auto;
+    }
+
+    .FootersingleGrid .footerTitle{
         font-size: 17px;
     }
 

@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import "./Footer.css";
 import FooterMenuDiv from "../../Components/FooterMenuDiv/FooterMenuDiv";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
+
 const Footer = () => {
   const menuSections = [
     {
