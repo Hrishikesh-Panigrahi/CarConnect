@@ -1,9 +1,17 @@
-import React from "react";
+import React, {useEffect}  from "react";
 import "./AuctionCarContainer.css";
 
-const AuctionCarContainer = ({ car, className }) => {
+import Aos from "aos";
+import "aos/dist/aos.css" 
+
+const AuctionCarContainer = ({ car, className }) => { 
+  
+  useEffect(() => {
+    Aos.init({duration: 3000});
+  }, []) 
+  
   return (
-    <div className={`singleAuctionCar grid ${className}`}>
+    <div data-aos='fade-up' className={`singleAuctionCar grid ${className}`}>
       <div className="imgDiv">
         <img src={car.image} alt="Car Image" />
       </div>

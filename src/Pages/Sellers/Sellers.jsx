@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useEffect}   from "react";
 import "./Sellers.css";
 
 import SellerContainer from "../../Components/SellerContainer/SellerContainer";
 
 import toyota from "../../assets/toyota.jpeg";
 import mercedes from "../../assets/mercedes.jpeg";
+
+import Aos from "aos";
+import "aos/dist/aos.css"; 
 
 const Sellers = () => {
   const sellers = [
@@ -28,12 +31,16 @@ const Sellers = () => {
       price: "$40k",
       image: mercedes,
     },
-  ];
+  ];  
+  
+  useEffect(() => {
+    Aos.init({duration: 3000});
+  }, []); 
 
   return (
     <div className="sellers section">
       <div className="secContainer container">
-        <div className="secHeading grid">
+        <div data-aos='fade-up' className="secHeading grid">
           <h3 className="sectitle">Explore Top sellers in town</h3>
 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Auction.css";
 
 import AuctionCarContainer from "../../Components/AuctionCarContainer/AuctionCarContainer";
@@ -9,7 +9,11 @@ import AudiA4 from "../../assets/AudiA4.png";
 import thar from "../../assets/thar.jpeg";
 import honda from "../../assets/honda.jpeg";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const Auction = () => {
+  
   const cars = [
     {
       title: "Used 2019 Audi A4 Premium",
@@ -63,10 +67,14 @@ const Auction = () => {
     },
   ];
 
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
+  
   return (
     <div className="auction section">
       <div className="secContainer container">
-        <div className="secHeading flex">
+        <div data-aos="fade-up" className="secHeading flex">
           <h3 className="secTitle">Active Auction</h3>
 
           <div className="navBtns flex">

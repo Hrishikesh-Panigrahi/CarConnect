@@ -1,11 +1,19 @@
-// ReviewContainer.jsx
-import React from "react";
-import "./ReviewContainer.css"; // Create a CSS file for styling
+import React, {useEffect}  from "react";
+import "./ReviewContainer.css"; 
+
+import Aos from "aos";
+import "aos/dist/aos.css" 
+
 import { AiFillStar } from "react-icons/ai";
 
-const ReviewContainer = ({ review }) => {
+const ReviewContainer = ({ review }) => { 
+ 
+  useEffect(() => {
+    Aos.init({duration: 3000});
+  }, []) 
+ 
   return (
-    <div className="singleReview grid">
+    <div data-aos='fade-up' className="singleReview grid">
       <div className="imgDiv">
         <img src={review.image} alt="CarImage" />
       </div>

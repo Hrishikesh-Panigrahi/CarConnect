@@ -1,10 +1,17 @@
 // SellerContainer.jsx
-import React from "react";
+import React, {useEffect} from "react";
 import "./SellerContainer.css"; // Create a CSS file for styling
+import Aos from "aos";
+import "aos/dist/aos.css"
 
-const SellerContainer = ({ seller }) => {
+const SellerContainer = ({ seller }) => {  
+  
+  useEffect(() => {
+    Aos.init({duration: 3000});
+  }, [])
+  
   return (
-    <div className="singleSeller flex">
+    <div data-aos='fade-up' className= "singleSeller flex">
       <div className="imgDiv flex">
         <img src={seller.image} alt="" className="img" />
       </div>

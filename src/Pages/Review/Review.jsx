@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Review.css";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import ReviewContainer from "../../Components/ReviewContainer/ReviewContainer";
@@ -10,10 +10,14 @@ import carReview3 from "../../assets/Car_Review3.jpg"
 import user_1 from "../../assets/user_1.jpg"
 import user_2 from "../../assets/user_2.jpeg"
 import user_3 from "../../assets/user_3.jpeg"
-
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 
 const Review = () => {
+ useEffect(() => {
+    Aos.init({duration: 3000});
+  }, [])
   const reviews = [
     {
       title: "2023 Honda",
@@ -46,10 +50,11 @@ const Review = () => {
       stars: 4.6,
     },
   ];
+  
   return (
     <div className="review section">
       <div className="secContainer container">
-        <div className="secHeading flex">
+        <div data-aos='fade-up' className="secHeading flex">
           <h3 className="secTitle">Recent Reviews</h3>
 
           <div className="navBtns flex">
