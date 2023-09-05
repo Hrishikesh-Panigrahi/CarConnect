@@ -1,17 +1,25 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Search.css";
 import { AiOutlineSearch } from "react-icons/ai";
 
+import Aos from "aos";
+import "aos/dist/aos.css"; 
+
 const Search = () => {
+
+  useEffect(() => {
+    Aos.init({duration: 3000});
+  }, []);
+
   return (
     <div className="search">
       <div className="secContainer container">
-        <h3 className="title">Which vehicles are you looking for?</h3>
+        <h3 data-aos='fade-up' className="title">Which vehicles are you looking for?</h3>
         <div className="searchdiv grid">
-          <input type="text" placeholder="Search" />
-          <input type="number" placeholder="Year" />
-          <input type="text" placeholder="Model" />
-          <input type="number" placeholder="Price" />
+          <input data-aos='fade-up' type="text" placeholder="Search" />
+          <input data-aos='fade-up' type="number" placeholder="Year" />
+          <input data-aos='fade-up' type="text" placeholder="Model" />
+          <input data-aos='fade-up' type="number" placeholder="Price" />
           <button className="btn primaryBtn flex">
             <AiOutlineSearch className="icon" />
             <span>Search</span>

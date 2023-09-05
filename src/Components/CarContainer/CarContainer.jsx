@@ -1,10 +1,17 @@
 // CarContainer.jsx
-import React from "react";
+import React, {useEffect}   from "react";
 import "./CarContainer.css"; // Create a CSS file for styling
 
+import Aos from "aos";
+import "aos/dist/aos.css";  
+
 const CarContainer = ({ car }) => {
+  useEffect(() => {
+    Aos.init({duration: 3000});
+  }, []); 
+
   return (
-    <div className="singleCar grid">
+    <div data-aos='fade-up' className="singleCar grid">
       <div className="imgDiv">
         <img src={car.image} alt="Car Image" />
       </div>
