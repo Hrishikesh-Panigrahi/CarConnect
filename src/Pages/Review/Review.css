@@ -24,3 +24,68 @@
     gap: 1.5rem;
     
 }
+
+@media screen and (min-width: 520px) {
+    .review .secHeading{
+        margin-top: 1rem;
+    }
+
+    .review .secTitle{
+        font-size: 23px;
+    }
+
+    .review .navBtns{
+        gap: .5rem;
+    }
+
+    .review .navBtns .icon{
+        font-size: 40px;
+    }
+
+    .reviewContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reviewContainer .singleReview .reviewTitle{
+        font-size: 18px;
+    }
+
+    .reviewContainer .singleReview .desc{
+        font-size: 16px;
+    }
+
+    .reviewerDiv .leftDiv .name{
+        font-size: 17px;
+    }
+   
+    .reviewerDiv .leftDiv p{
+        font-size: 16px;
+    }
+     
+    .reviewerDiv .rightDiv .icon{
+        font-size: 16px;
+    }
+
+    .reviewerDiv .rightDiv blockquote{
+       font-weight: 600;
+       font-size: 16px;
+    }
+}
+
+
+@media screen and (min-width: 940px) {
+    .review .secTitle{
+        font-size: 28px;
+    }
+
+    .review .navBtns{
+        gap: 1rem;
+    }
+
+
+    .reviewContainer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+   
+}

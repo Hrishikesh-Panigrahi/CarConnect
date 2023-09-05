@@ -30,12 +30,36 @@ const Auction = () => {
     },
 
     {
-      title: "Used 2019 Thar Premium",
+      title: "Used 2019 Honda Premium",
       miles: "20,000 miles",
       features: "AWD / 4 Cylinders",
       price: "$20,000",
       seller: "Buy Car",
       image: honda,
+    },
+    {
+      title: "Used 2019 Car4 Premium",
+      miles: "20,000 miles",
+      features: "AWD / 4 Cylinders",
+      price: "$20,000",
+      seller: "Buy Car",
+      image: honda,
+    },
+    {
+      title: "Used 2019 Car5 Premium",
+      miles: "20,000 miles",
+      features: "AWD / 4 Cylinders",
+      price: "$20,000",
+      seller: "Buy Car",
+      image: AudiA4,
+    },
+    {
+      title: "Used 2019 Car6 Premium",
+      miles: "20,000 miles",
+      features: "AWD / 4 Cylinders",
+      price: "$20,000",
+      seller: "Buy Car",
+      image: thar,
     },
   ];
 
