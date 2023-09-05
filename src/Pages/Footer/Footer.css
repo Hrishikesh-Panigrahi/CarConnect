@@ -8,3 +8,46 @@
     border-radius: 10px;
     gap: 1.5rem;
 }
+
+@media screen and (min-width: 520px) {
+    .footerMenuDiv{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .singleGrid .footerTitle{
+        font-size: 17px;
+    }
+
+    .footerUI {
+        gap: 5px;
+    }
+
+    .footerUI .footerLI{
+        color: var(--text-color);
+    }
+
+    .lowerSection{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .footerMenuDiv{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+   
+}
+
+@media screen and (min-width: 940px) {
+    .footerContainer{
+        padding: 2rem 0;
+    }
+    .footerMenuDiv{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+   
+}

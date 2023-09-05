@@ -10,7 +10,7 @@
     gap: 5px;
 }
 
-.footerLi{
+.footerLI{
     color: var(--text-color);
 
     &:hover{
